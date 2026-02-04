@@ -1,0 +1,15 @@
+{% assign pid = page.project_id %}
+{% if pid %}
+  {% assign logs = site.posts | where_exp: "post", "post.categories contains 'study-log'" | where_exp: "post", "post.related_projects contains pid" %}
+
+  {% if logs and logs.size > 0 %}
+    <h2>Related Logs</h2>
+    <ul>
+      {% for post in logs %}
+        <li>
+          <a href="{{ post.url }}">{{ post.date | date: "%Y-%m-%d" }} — {{ post.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  {% endif %}
+{% endif %}

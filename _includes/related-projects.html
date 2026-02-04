@@ -1,0 +1,15 @@
+{% if page.related_projects %}
+<div class="page__related-projects">
+  <h2>Related Projects</h2>
+  <ul>
+    {% for pid in page.related_projects %}
+      {% assign p = site.data.projects[pid] %}
+      {% if p %}
+        <li><a href="{{ p.url | relative_url }}">{{ p.title }}</a></li>
+      {% else %}
+        <li>{{ pid }}</li>
+      {% endif %}
+    {% endfor %}
+  </ul>
+</div>
+{% endif %}
