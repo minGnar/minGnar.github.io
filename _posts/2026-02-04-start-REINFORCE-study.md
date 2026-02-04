@@ -20,7 +20,6 @@ related_projects: [rl-basics]
 
 ## What I Learned
 
-Several principles became clear during this setup phase:
 
 
 ---
