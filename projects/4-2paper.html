@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>4-2 Paper - MiniGnar</title>
+  <link rel="stylesheet" href="../style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+  <style>
+    .pdf-container {
+      width: 100%;
+      height: calc(100vh - 46px);
+    }
+    .pdf-container iframe {
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+  </style>
+</head>
+<body class="dark">
+
+  <nav class="topnav">
+    <span class="nav-logo">MiniGnar</span>
+    <div class="nav-links">
+      <a href="../index.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="../cs285/studylog.html">Study Log</a>
+      <a href="#">Reading</a>
+      <a href="#">CV</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  </nav>
+
+  <div class="pdf-container">
+    <iframe src="https://docs.google.com/viewer?url=https://mingnar.github.io/projects/capstone_2nd.pdf&embedded=true"></iframe>
+  </div>
+
+  <script src="../theme.js"></script>
+</body>
+</html>
