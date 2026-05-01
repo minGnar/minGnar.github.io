@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MiniGnar - Yun Sanguk</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Source+Serif+4:wght@300;400;600&display=swap" rel="stylesheet" />
+</head>
+<body class="dark">
+
+  <!-- NAV -->
+  <nav class="topnav">
+    <span class="nav-logo">MiniGnar</span>
+    <div class="nav-links">
+      <a href="index.html" class="active">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="studylog.html">Study Log</a>
+      <a href="#">Reading</a>
+      <a href="#">CV</a>
+    </div>
+    <button class="theme-toggle" onclick="toggleTheme()" title="Toggle theme">🌙</button>
+  </nav>
+
+  <!-- HERO BANNER -->
+  <div class="hero-banner">
+    <div class="hero-text">
+      <h1>welcome miniGnar's website!</h1>
+      <p>I'm going to be a robot RL researcher.</p>
+    </div>
+  </div>
+
+  <!-- MAIN LAYOUT -->
+  <div class="main-layout">
+    <!-- SIDEBAR -->
+    <aside class="sidebar">
+      <div class="avatar-wrap">
+        <img src="https://via.placeholder.com/160/888/888?text=+" alt="avatar" class="avatar" />
+      </div>
+      <h2 class="sidebar-name">Yun Sanguk</h2>
+      <p class="sidebar-bio">Short biography for the left-hand sidebar</p>
+      <ul class="sidebar-links">
+        <li><span class="icon">📍</span> Seoul</li>
+        <li><span class="icon">🏛</span> Korea University</li>
+        <li><span class="icon">✉️</span> <a href="#">Email</a></li>
+        <li><span class="icon">🎓</span> <a href="#">Google Scholar</a></li>
+        <li><span class="icon" style="color:#a8e55a">●</span> <a href="#">ORCID</a></li>
+        <li><span class="icon">🔬</span> <a href="#">PubMed</a></li>
+        <li><span class="icon">🐙</span> <a href="#">GitHub</a></li>
+        <li><span class="icon" style="color:#3b82f6">🦋</span> <a href="#">Bluesky</a></li>
+      </ul>
+    </aside>
+
+    <!-- CONTENT -->
+    <main class="content">
+      <section>
+        <h2>About Me</h2>
+        <p>
+          I am a researcher passionate about reinforcement learning applied to robotics. 
+          My goal is to develop intelligent agents that can learn complex manipulation tasks 
+          through trial and experience.
+        </p>
+        <p>
+          Currently studying at Korea University, Seoul. Interested in model-free RL, 
+          sim-to-real transfer, and continuous control.
+        </p>
+      </section>
+
+      <section>
+        <h2>News</h2>
+        <ul class="news-list">
+          <li><span class="date">2025.01</span> Started building this academic website.</li>
+          <li><span class="date">2024.12</span> Completed CS285 Deep RL course study.</li>
+        </ul>
+      </section>
+    </main>
+  </div>
+
+  <script src="theme.js"></script>
+</body>
+</html>
